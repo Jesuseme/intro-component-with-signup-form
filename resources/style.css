@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', Helvetica, monospace;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container 
+{
+    background: hsl(0, 100%, 74%) ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container section 
+{
+    background: url(../images/bg-intro-desktop.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.container section .textBox
+{
+    width: 50%;
+    padding: 14rem 0 0 8rem;
+}
+
+.container section .textBox h1 
+{
+    font-size: 3rem;
+    line-height: 50px;
+}
+
+.container section .textBox p 
+{
+    line-height: 24px;
+    padding: 2rem 0;
+}
+
+
+.container section .formBox
+{
+    width: 45%;
+    padding: 3rem 5rem 0 0.5rem;
+}
+
+.container section .formBox h2 
+{
+    font-size: 0.8rem;
+    background: hsl(248, 32%, 49%);
+    padding: 1rem;
+    height: 3rem;
+    border-radius: 7px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container section .formBox h2 span
+{
+    font-weight: 100;
+    padding-left: 5px; 
+    display: inline-block;
+}
+
+.container section .formBox form 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.container section .formBox form input 
+{
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding: 0.8rem 2rem;
+    margin: 0.5rem 0;
+    font-weight: 700;
+    color: #000;
+}
+
+.container section .formBox form input:focus
+{
+    outline: none;
+}
+
+.container section .formBox form img 
+{
+    width: 24px;
+    position: relative;
+    margin: -44px 0px 20px 87%;
+    visibility: hidden;
+}
+
+.container section .formBox form span
+{
+    color: hsl(0, 100%, 74%);
+    font-size: 0.7rem;
+    text-align: right;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+.container section .formBox form #submit 
+{
+    background: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0px 3px  hsl(154, 55%, 45%);
+    border: none;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.container section .formBox form p 
+{
+    font-size: 0.6rem;
+    margin: 0 auto;
+    color: hsl(246, 25%, 77%);
+    padding: 1rem;
+}
+
+.container section .formBox form p a 
+{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 400;
+}
+
+@media (max-width: 991px)
+{ 
+
+    .container
+    {
+        height: 129vh;
+    }
+
+    .container section 
+    {
+        height: 123vh;
+    }
+
+    .container section 
+    {
+        background: url(../images/bg-intro-mobile.png);
+        display: grid;  
+    }
+
+    .container section .textBox 
+    {
+        width: 100%;
+        margin: 4rem auto ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        height: 40%;
+    }
+
+    .container section .textBox h1
+    {
+        font-size: 2rem;
+    }
+
+    .container section .formBox 
+    {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        margin: -9rem auto 0;
+    }
+
+    .container section .formBox h2 
+    {
+        display: inline-block;
+        padding: 1rem 3rem 3rem;
+    }
+
+    .container section .formBox form
+    {
+        padding: 1rem 0.7rem;
+
+    } 
+}
+
+@media (max-width: 360px)
+{
+    .container
+    {
+        height: 139vh;
+    }
+
+    .container section 
+    {
+        height: 133vh;
+    }
+
+    .container section .textBox
+    {
+        width: 90%;
+    } 
+
+    .container section .formBox 
+    {
+        width: 90%;
+    }
+
+}
